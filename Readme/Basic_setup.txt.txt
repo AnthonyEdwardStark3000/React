@@ -1,0 +1,48 @@
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ 													│
+│      		   			***REQUIREMENTS***			         		│
+│                                                                                                       │
+│												        │												│
+│      	1. Download node.js LTS 									│
+│       2. Download text_editor (vs.code)								│	
+│       3. Download GIT for version control								│
+│       4. Chrome -> extension (React Developer Tools)							│
+│       5. Postman / imsonia for API calls								│
+│       6. vsCode extensions 										│
+│       emmet -> javascriptreact									│
+│       es7react/redux/graphql/react - native snippets							│
+│       bracket pair colorizer										│
+│       github darktheme										│
+│       javascript (es6) code snippets									│
+│       prettier											│						
+│       visit --> bradtraversy	for git project links							│
+│   													│
+│                                                                                                       │
+│													│
+│  													│
+└───────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ 													│
+│      		   			***COMMANDS***   			         		│
+│                                                                                                       │
+│												        │												│
+│  	 *   npx create-react-app name	         							│
+│       (Run react even without installing)								│	
+│      													│
+│        * npm start											│
+│       			         								│
+│      													│
+│       												│
+│       												│
+│       												│
+│       												│
+│       												│
+│       						         					│						
+│       												│
+│   													│
+│                                                                                                       │
+│													│
+│  													│
+└───────────────────────────────────────────────────────────────────────────────────────────────────────┘		
