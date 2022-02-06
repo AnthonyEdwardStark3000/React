@@ -32,7 +32,7 @@
 │       (Run react even without installing)								│	
 │      													│
 │        * npm start											│
-│       			         								│
+│       				         							│
 │      													│
 │       												│
 │       												│
