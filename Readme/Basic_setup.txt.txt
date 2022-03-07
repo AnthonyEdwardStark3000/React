@@ -28,7 +28,7 @@
 │      		   			***COMMANDS***   			         		│
 │                                                                                                       │
 │												        │												│
-│  	 *   npx create-react-app name	         							│
+│  	 *   npx create-react-app appname	         							│
 │       (Run react even without installing)								│	
 │      													│
 │        * npm start											│
