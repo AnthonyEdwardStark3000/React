@@ -38,12 +38,13 @@
 // export default App;
 import Header from './Components/Header';
 import { useState } from 'react';
-import FeedBackItem from './Components/FeedBackItem';
-import 
+// import FeedBackItem from './Components/FeedBackItem';
+import FeedBackList from './Components/FeedBackList';
+import FeedbackData from './Data/FeedbackData';
 
 function App(){
     //state definition starts
-
+    const [feedback, setFeedback] = useState(FeedbackData);    
     //state definition ends
     return(
         <>
@@ -51,7 +52,7 @@ function App(){
         //bgColor='red' textColor='white'
         ></Header>
         <div className="container">
-        <FeedBackItem></FeedBackItem>
+        <FeedBackList feedback = {feedback}/>
         </div>
         </>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState} from 'react'; // component state
 
-function FeedBackItem() {
+function FeedBackItem({item}) {
     const [rating, setRating] = useState(7);
     const [text, setText] = useState('Example of a Feedback Item');
 
@@ -14,8 +14,8 @@ function FeedBackItem() {
 
   return (
     <div className='card'>
-    <div className='num-display'> {rating} </div>
-    <div className='text-display'> {text} </div>
+    <div className='num-display'> {item.rating} </div>
+    <div className='text-display'> {item.text} </div>
     <button onClick={handleClick}>Click</button>
     </div>
   )
