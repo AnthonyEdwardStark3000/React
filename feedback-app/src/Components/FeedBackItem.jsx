@@ -1,23 +1,28 @@
 import React from 'react';
+import Card from './shared/Card';
+import { FaTimes } from 'react-icons/fa';
 import {useState} from 'react'; // component state
 
-function FeedBackItem({item}) {
+function FeedBackItem({item, handleDelete}) {
     const [rating, setRating] = useState(7);
     const [text, setText] = useState('Example of a Feedback Item');
 
-    const handleClick = ()=>{
-        setRating((prev)=>{
-           console.log(prev)
-            return prev + 1
-        })
-    }
+    // const handleClick = ()=>{
+    //     setRating((prev)=>{
+    //        console.log(prev)
+    //         return prev + 1
+    //     })
+    // }
+
 
   return (
-    <div className='card'>
+    <Card reverse = {true}>
     <div className='num-display'> {item.rating} </div>
+    <button onClick={()=>{ handleDelete(item.id) }} className="close">
+        <FaTimes color='purple' />
+    </button>
     <div className='text-display'> {item.text} </div>
-    <button onClick={handleClick}>Click</button>
-    </div>
+    </Card>
   )
 }
 

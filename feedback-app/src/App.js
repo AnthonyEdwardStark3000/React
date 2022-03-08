@@ -46,13 +46,23 @@ function App(){
     //state definition starts
     const [feedback, setFeedback] = useState(FeedbackData);    
     //state definition ends
+
+    const deleteFeedback = (id)=>{
+        // console.log(id);
+        if(window.confirm('Are you sure to Delete this post ?:')){
+            setFeedback(feedback.filter((item)=>
+                item.id !== id
+            ))
+        }
+    }
+
     return(
         <>
-        <Header text="Advance Bday Wishes From" 
+        <Header text="React Feedback" 
         //bgColor='red' textColor='white'
         ></Header>
         <div className="container">
-        <FeedBackList feedback = {feedback}/>
+        <FeedBackList feedback = {feedback} handleDelete = {deleteFeedback}/>
         </div>
         </>
     )
