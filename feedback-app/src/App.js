@@ -41,6 +41,7 @@ import { useState } from 'react';
 // import FeedBackItem from './Components/FeedBackItem';
 import FeedBackList from './Components/FeedBackList';
 import FeedbackData from './Data/FeedbackData';
+import FeedBackStats from './Components/FeedBackStats';
 
 function App(){
     //state definition starts
@@ -62,6 +63,7 @@ function App(){
         //bgColor='red' textColor='white'
         ></Header>
         <div className="container">
+        <FeedBackStats feedback = {feedback}/>
         <FeedBackList feedback = {feedback} handleDelete = {deleteFeedback}/>
         </div>
         </>
