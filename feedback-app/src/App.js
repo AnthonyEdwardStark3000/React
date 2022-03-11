@@ -43,11 +43,16 @@ import FeedBackList from './Components/FeedBackList';
 import FeedbackData from './Data/FeedbackData';
 import FeedBackStats from './Components/FeedBackStats';
 import FeedBackForm from './Components/FeedBackForm';
+import { v4 as uuidv4 } from 'uuid';
 
 function App(){
     //state definition starts
     const [feedback, setFeedback] = useState(FeedbackData);    
     //state definition ends
+    const addFeedback=(newFeedback)=>{
+        newFeedback.id = uuidv4();
+        setFeedback([newFeedback, ...feedback]);
+    }
 
     const deleteFeedback = (id)=>{
         // console.log(id);
@@ -64,7 +69,7 @@ function App(){
         //bgColor='red' textColor='white'
         ></Header>
         <div className="container">
-        <FeedBackForm />
+        <FeedBackForm handleAdd ={addFeedback} />
         <FeedBackStats feedback = {feedback}/>
         <FeedBackList feedback = {feedback} handleDelete = {deleteFeedback}/>
         </div>

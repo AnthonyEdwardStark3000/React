@@ -4,7 +4,7 @@ import Button from './shared/Button';
 import {useState} from 'react';
 import RatingSelect from './RatingSelect';
 
-function FeedBackForm() {
+function FeedBackForm({handleAdd}) {
     const [text, setText]= useState('');
     const [btnDisabled, setBtnDisabled]= useState(true);
     const [message, setMessage]= useState('');
@@ -32,7 +32,8 @@ function FeedBackForm() {
                 text,
                 rating,
             }
-            console.log(newFeedback);
+            handleAdd(newFeedback);
+            setText('')
         }
     }
 
