@@ -44,6 +44,8 @@ import FeedbackData from './Data/FeedbackData';
 import FeedBackStats from './Components/FeedBackStats';
 import FeedBackForm from './Components/FeedBackForm';
 import { v4 as uuidv4 } from 'uuid';
+import AboutPage from './pages/AboutPage';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 function App(){
     //state definition starts
@@ -64,16 +66,24 @@ function App(){
     }
 
     return(
-        <>
+        <Router>
         <Header text="React Feedback" 
         //bgColor='red' textColor='white'
         ></Header>
         <div className="container">
-        <FeedBackForm handleAdd ={addFeedback} />
-        <FeedBackStats feedback = {feedback}/>
-        <FeedBackList feedback = {feedback} handleDelete = {deleteFeedback}/>
+        <Routes>
+            <Route exact path='/' element = {
+                <>
+                <FeedBackForm />
+                <FeedBackStats />
+                <FeedBackList />
+                </>
+            }>
+            </Route>
+            <Route path='/about' element={<AboutPage/>}/>
+        </Routes>
         </div>
-        </>
+        </Router>
     )
 };
 
