@@ -44,8 +44,13 @@ import FeedbackData from './Data/FeedbackData';
 import FeedBackStats from './Components/FeedBackStats';
 import FeedBackForm from './Components/FeedBackForm';
 import { v4 as uuidv4 } from 'uuid';
+import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom';
+import Card from './Components/shared/Card';
 import AboutPage from './pages/AboutPage';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import AboutIconLink from './Components/shared/AboutIconLink';
+import Post from './Components/Post';
+
+
 
 function App(){
     //state definition starts
@@ -66,24 +71,36 @@ function App(){
     }
 
     return(
-        <Router>
-        <Header text="React Feedback" 
-        //bgColor='red' textColor='white'
-        ></Header>
-        <div className="container">
-        <Routes>
-            <Route exact path='/' element = {
-                <>
-                <FeedBackForm />
-                <FeedBackStats />
-                <FeedBackList />
-                </>
-            }>
-            </Route>
-            <Route path='/about' element={<AboutPage/>}/>
+      <Router>
+      <Header />
+      <div className= 'container'>
+      <Routes>
+      <Route exact path='/'
+       element={
+          <>
+          <FeedBackForm />
+          <FeedBackStats />
+          <FeedBackList />
+          </>
+      }>
+
+      </Route>
+       <Route path='/about' element={< AboutPage />}/>
+       <Route path='/post/*' element={< Post />}/>
+       <AboutIconLink />   
         </Routes>
+        <Card>
+        <NavLink to='/' activeClassName='active'>
+        Home
+        </NavLink>
+
+        <NavLink to='/about' activeClassName='active'>
+        About
+        </NavLink>
+
+        </Card>      
         </div>
-        </Router>
+      </Router>
     )
 };
 
