@@ -1,0 +1,46 @@
+****************************** Rendering basic output *******************************
+Heading and an unordered list 
+
+ReactDOM.render(
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  <>
+  <h1>My Favourite Foods</h1>
+  <ul>
+  <li>apple</li>
+  <li>orange</li>
+  <li>banana</li>
+  </ul>
+  </>,
+  document.getElementById('root')
+);
+
+****************************************  With values ****************************************
+const name = "Suresh";
+const age = 22;
+ReactDOM.render(
+  // <React.StrictMode>
+  //   <App />
+  // </React.StrictMode>,
+  <>
+  <h1>{name}'s' Favourite Foods are</h1>
+  <ul>
+  <li>apple</li>
+  <li>orange</li>
+  <li>banana</li>
+  </ul>
+  <h2>And he is just <span> {age} </span>years old</h2>
+  </>,
+  document.getElementById('root')
+);
+
+************** Styles ***************
+.heading{
+    color: red;
+}
+className="heading" to apply it to the tag
+
+******************* Image filter *****************
+const url = "https://picsum.photos/200";
+  <img src={url+"?grayscale"} ></img>
