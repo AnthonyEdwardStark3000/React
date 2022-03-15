@@ -44,3 +44,24 @@ className="heading" to apply it to the tag
 ******************* Image filter *****************
 const url = "https://picsum.photos/200";
   <img src={url+"?grayscale"} ></img>
+
+******************* Inline css ********************
+create an object and then bind it.
+React styles are completely camelcased (fontSize) not cabab cased (font-size)
+const myStyle = {
+  color: "white",
+  background: "red"
+};
+myStyle.background = "violet";
+ReactDOM.render(const myStyle = {
+  color: "white",
+  background: "red"
+};
+myStyle.background = "violet";
+ReactDOM.render(
+    <ul>
+      <li style={myStyle}>apple</li>
+    </ul>
+)
+
+************************ 
