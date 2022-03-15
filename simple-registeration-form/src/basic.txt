@@ -64,4 +64,5 @@ ReactDOM.render(
     </ul>
 )
 
-************************ 
+************************ Component Understanding ****************************
+component is react is simply functions with pascal case
