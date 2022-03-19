@@ -9,6 +9,7 @@ function Card(props){
       <h1 className="heading">My contacts</h1>
       <div className="card">
       <div className="top">
+      {/* <p>{props.id}</p> */}
       <h2 className="name">{props.name}</h2>
       <Avatar img={props.image}/>
       </div>

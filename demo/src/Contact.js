@@ -1,5 +1,6 @@
 const contacts = [
     {
+        id: 1,
         name :"One",
         imgURL:
         "https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg",        phone:"123",
@@ -7,6 +8,7 @@ const contacts = [
         email:"one@gmail.com"
     },
     {
+        id: 2,
         name :"Two",
         imgURL:
         "https://pbs.twimg.com/profile_images/625247595825246208/X3XLea04_400x400.jpg",        phone:"234",
@@ -14,6 +16,7 @@ const contacts = [
         email:"two@gmail.com"
     },
     {
+        id: 3,
         name :"Three",
         imgURL:
         "https://i.pinimg.com/originals/e3/94/47/e39447de921955826b1e498ccf9a39af.png",
