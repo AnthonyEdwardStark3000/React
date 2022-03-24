@@ -1,0 +1,1 @@
+React state is used to Render elements to the DOM after some change occurs
