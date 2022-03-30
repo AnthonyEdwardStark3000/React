@@ -8,9 +8,10 @@ const [cat, dog]=animals;
 // const {name,sound,feedingRequirements} = cat;
 // console.log(feedingRequirements);
 
-const [animal, makeSound] = useAnimals(cat);
-console.log(animal);
-makeSound();
+// const [animal, makeSound] = useAnimals(cat);
+//   console.log(animal);
+//   makeSound();
+
 
 function App() {
   return (

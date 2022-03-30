@@ -1,18 +1,24 @@
 import './App.css';
 
+var isDone = false;
 function strike(){
-  document.getElementById('root').style.textDecoration = "line-through"
+  isDone = true
+  // document.getElementById("root").style.textDecoration="line-through";
+}
+function removeStrike(){
+   isDone = false;
+  // document.getElementById("root").style.textDecoration= null;
 }
 
 function App() {
-  var isDone = false;
-  const strikeThrough = {textDecoration: "line-through"}; 
+  // const strikeThrough = {textDecoration: "line-through"}; 
   return (
     <>
-    <p>
+    <p style={isDone?{textDecoration:"line-through"}: null}>
      Buy link
     </p>
-    <button onClick={strike}>Change State</button>
+    <button onClick={strike}>Strike State</button>
+    <button onClick={removeStrike}>Change State</button>
     </>
   );
 }
