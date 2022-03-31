@@ -1,12 +1,13 @@
 import express from "express";
-import { getPosts ,createPost } from '../controllers/posts.js';
+import {getPosts, createPost} from '../controllers/posts.js';
+
+
+// not work with localhost:5000/
+// work with localhost:5000/posts bcz of index.js express.use
+
 const router = express.Router();
 
-//not localhost:5000/
-//but localhost:5000/posts      
-
-//data from the controller .Function definition is in the controller.
-router.get("/", getPosts); 
-router.post("/", createPost); 
+router.get('/', getPosts);
+router.post('/', createPost);
 
 export default router;
