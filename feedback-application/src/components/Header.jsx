@@ -2,7 +2,7 @@ import PropTypes  from "prop-types";
 
 function Header({ text }) {
   return (
-    <header>
+    <header style={{backgroundColor: 'green',color: 'white'}}>
     <div className="container">
         {/* <h2>FeedBack UI</h2> static output*/}
         <h2>{text}</h2>
