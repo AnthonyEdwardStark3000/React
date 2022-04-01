@@ -3,7 +3,7 @@ function App(){
 
     return(
         <>
-        <Header text="Hello world"/>
+        <Header text="Hello world" bgColor='violet' textColor='white'/>
         <div className='container'>
         {/* <h1>Application Begins here</h1> */}
         </div>
