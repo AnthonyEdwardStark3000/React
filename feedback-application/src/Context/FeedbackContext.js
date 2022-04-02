@@ -41,10 +41,10 @@ export const FeedbackProvider = function({children}){
 
     //update an item
     
-    const updateFeedback = function (id,updateItem){
+    const updateFeedback = function (id,updItem){
     //    console.log(id);
-    //    console.log(updateItem);
-    setFeedback(feedback.map((item)=>item.id === id ? {...item, ...updateItem} : item   
+    //    console.log(updItem);
+    setFeedback(feedback.map((item)=>item.id === id ? {...item, ...updItem} : item   
     ));
     }
     

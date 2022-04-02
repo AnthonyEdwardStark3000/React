@@ -15,7 +15,7 @@ function FeedbackForm() {
            setText(feedbackEdit.item.text);
            setRating(feedbackEdit.item.rating);
        }
-    },[feedbackEdit])
+    },[feedbackEdit])   
 
     const [text, setText] = useState('');
     const [btnDisabled, setBtnDisabled] = useState(true);
@@ -45,7 +45,7 @@ function FeedbackForm() {
             }
             // handleAdd(newFeedback);
             if(feedbackEdit.edit===true){
-                updateFeedback(feedbackEdit.edit.id, newFeedback);
+                updateFeedback(feedbackEdit.item.id, newFeedback);
             }
             else{
                 addFeedback(newFeedback);
