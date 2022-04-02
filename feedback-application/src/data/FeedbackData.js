@@ -2,17 +2,18 @@ const FeedbackData = [
     {
         id: 1,
         rating: 10,
-        text: 'afsdddddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsddda'
+        text: 'FeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item oneFeedBack Item one'
     },
     {
         id: 2,
         rating: 9,
-        text: 'afsdddddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddadddddddddddddddddddddddddddddddd'
+        text: 'FeedBack Item two'
+        
     },
     {
         id: 3,
         rating: 8,
-        text: 'afsdddddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsdddaddddddddddddddddddddddddddddddddddddddfFSdsdsdasdsdsdsddsdsdsadasdsddda'
+        text: 'FeedBack Item three'
     },
 ]
 
