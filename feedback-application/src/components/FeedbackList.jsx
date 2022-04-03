@@ -3,17 +3,18 @@ import FeedbackItem from "./FeedbackItem";
 import { useContext } from 'react'; //for context
 // import PropTypes  from 'prop-types';
 import FeedbackContext from '../Context/FeedbackContext';
+import Spinner from './shared/Spinner';
 
 
 // function FeedbackList({feedback, handleDelete}) {
 function FeedbackList() {
     // console.log(feedback[0].rating);
-    const {feedback} = useContext(FeedbackContext); 
-    if(!feedback || feedback.length ===0){
+    const {feedback, isLoading} = useContext(FeedbackContext); 
+    if(!isLoading && (!feedback || feedback.length ===0)){
         return <h1>No feedbacks</h1>
     } else
-    return (
-    <div className='feedback-list'>
+    return isLoading ? <Spinner /> : (
+        <div className='feedback-list'>
         <AnimatePresence>     
         {feedback.map((item) => (  
             <motion.div key={item.id}
@@ -29,7 +30,8 @@ function FeedbackList() {
         ))}
         </AnimatePresence>
     </div>
-  )
+    )
+ 
 //     return (
 //     <div className='feedback-list'>
 //         {feedback.map((item) => (         

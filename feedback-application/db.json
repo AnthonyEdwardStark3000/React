@@ -1,0 +1,34 @@
+{
+  "feedback": [
+    {
+      "id": 1,
+      "rating": 10,
+      "text": "awesome feedback item one from backend"
+    },
+    {
+      "id": 2,
+      "rating": 8,
+      "text": "awesome feedback item two from backend"
+    },
+    {
+      "id": 3,
+      "rating": 9,
+      "text": "awesome feedback item three from backend"
+    },
+    {
+      "rating": 10,
+      "text": "check post function",
+      "id": 4
+    },
+    {
+      "text": "Test Post for check",
+      "rating": 8,
+      "id": 5
+    },
+    {
+      "text": "Test Post for checking purpose ",
+      "rating": 9,
+      "id": 6
+    }
+  ]
+}
