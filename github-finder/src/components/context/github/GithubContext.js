@@ -9,12 +9,15 @@ const GITHUB_TOKEN = process.env.REACT_APP_GITHUB_TOKEN;
 export const GithubProvider = ({children})=>{
     const initialState = {
         users: [],
-        loading: true
+        loading: false
     }
     
     const [state, dispatch] = useReducer(githubReducer, initialState); //Reducer for function
 
+    //Get initial users ...testing
+
     const fetchUsers = async function(){
+        setLoading()
         const response = await fetch(`${GITHUB_URL}/users`, {
             headers: {
                 Authorization: `token ${GITHUB_TOKEN}`
@@ -28,6 +31,12 @@ export const GithubProvider = ({children})=>{
            loading: false
        });
     }
+    
+    //function to set loading
+   const setLoading = () => dispatch({
+       type: 'SET_LOADING'
+   })
+
     return <GithubContext.Provider value={{users: state.users, loading: state.loading, fetchUsers}}>
         {children}
     </GithubContext.Provider>
