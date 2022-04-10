@@ -12,6 +12,7 @@ function UserItem({user: {login, avatar_url}}) {
     </div>
     </div>
     <div className="text-center">
+    <h1>Check user</h1>
         <h2 className="card-title">
             {login}
         </h2>
@@ -24,7 +25,7 @@ function UserItem({user: {login, avatar_url}}) {
 }
 
 UserItem.propTypes = {
-    user: PropTypes.object.isRequired
+    user: PropTypes.object.isRequired,
 }
 
 export default UserItem
