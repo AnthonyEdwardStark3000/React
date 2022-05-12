@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+input {
+  border: 1px solid #cccccc;
+  outline: none;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+input:hover {
+  border: 1px solid #adadad;
+}
+
+input:focus {
+  border: 1px solid #239ce2;
+}
+
+@media(max-width: 650px)
+{
+  .container{
+    /* border: 3px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-width: auto;
+    max-width: 50%;
+  }
+  label{
+    font-size: 3vh;
+  }
+  input{
+    width: 100%;
+  }
+  input,
+  input::placeholder{
+    /* border: 3px solid green; */
+    font-size: 5px;
+  }
+}

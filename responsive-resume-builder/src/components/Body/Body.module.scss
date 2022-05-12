@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    // background-color: aliceblue;
+}
+.container {
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 0;
+    width: 100%;
+    // border: 2px solid red;
+}
+
+.row{
+    display: flex;
+    // flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    // border: 2px solid blue;
+    &__heading{
+        // border: 2px solid green;
+        font-size: 2.3vw;
+        font-weight: bolder;
+        color: #239ce2;
+    }
+}
+
+.toolbar{
+    width: (100%)/2;
+    // border: 3px solid violet;
+}
+
+.main{
+    // border: 2px solid yellow;
+    width: (100%)/2;
+    &__details{
+        width: 100%;
+        // border: 3px solid yellow;
+    }
+}
+.side{
+    // border: 3px solid grey;
+    width: 47%;
+    &__label{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    &__text{
+        margin-left: 200px;
+        text-align: end;
+        width: 50%;
+    }
+    &__button{
+        text-align: end;
+        // border: 2px solid green;
+        width: 50%;
+    }
+}
+
+.Resumecontainer__print{   
+    border: 3px solid blueviolet;
+    // position: absolute;
+}
+button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #239ce2;
+    color: #fff;
+    outline: none;
+    border: none;
+    // font-weight: 500;
+    // font-size: 1rem;
+    // letter-spacing: 1px;
+    // display: flex;
+    // gap: 5px;
+    // align-items: center;
+    cursor: pointer;
+    width: 4vw;
+  }
+  
+  .colors {
+      display: flex;
+      gap: 10px;
+      padding: 0 10px;
+      p{
+          font-size: 4vh;
+          align-items: center;
+      }
+    }
+    
+    .colors .color {
+    flex-direction: row;
+    // border: 1px solid red;
+    height: 26px;
+    width: 48px;
+    border-radius: 12%;
+  }
+  .colors .active {
+    border: 2px solid #000;
+  }
+  
+
+  button svg {
+    background: none;
+    height: 20px;
+    width: 20px;
+  }
+
+  @media (max-width: 1160px)
+  {
+      .container{
+        //   border: 3px solid red;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+      .main{
+        // border: 2px solid yellow;
+        width: 100%;
+        &__details{
+            width: 100%;
+            // border: 3px solid yellow;
+        }
+    }
+    .side{
+        // border: 3px solid grey;
+        width: 94%;
+    }
+  }
+  @media (max-width: 650px)
+  {
+      .container{
+        //   border: 3px solid brown;
+          display: flex;
+      }
+      .main{
+        //   border: 2px solid green;
+          &__details{
+            //   border: 2px solid blue;
+              
+          }
+      }
+      .colorcontainer{
+          display: flex;
+        //   border: 3px solid violet;
+        }
+    .colors{
+        align-items: center;
+        flex-direction: column;
+        p{
+            font-weight: bold;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5vh;
+        }
+      }
+      .side{
+        //   border: 3px solid red;
+          &__label{
+              display: flex;
+              flex-direction: column;
+              font-size: 4vh;
+              margin-left: 0px;
+              margin-right: auto;
+              align-items: center;
+            }
+            &__text{
+                margin-left: 0px;
+                justify-content: center;
+          }
+             &__button{
+              display: block;
+              width: 100%;
+              border-radius: 100%;
+           }
+      }
+  }
